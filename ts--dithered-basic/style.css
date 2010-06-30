@@ -36,8 +36,23 @@ p, blockquote { text-align: justify; }
 blockquote { background: #eef url(images/blockquote.png) no-repeat;
 	border: 1px dotted #999; padding: 5px 5px 5px 35px; overflow: auto; }
 blockquote p { margin: 0; }
-pre { background: #eef; border: 1px dotted #999;
-	margin: 0.5em 2em; padding: 5px; }
+pre {
+	background: #ddd;
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+	margin: 0.5em 2em; padding: 5px;
+	font-size: 0.9em;
+	font-family: Courier New, Courier, monospace;
+	line-height: 1.1em;
+	text-shadow: 0 0 0;
+	/* word-wrap hack */
+	overflow-x: auto;		/* horizontal scroller,for Firefox 2 */
+	white-space: pre-wrap;	/* css-3 */
+	white-space: -moz-pre-wrap !important;	/* Mozilla and Firefox */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
 
 div.another_category,
 div.entry-ccl,
