@@ -14,24 +14,25 @@
     <b:skin><![CDATA[/*
 -----------------------------------------------
 Blogger Template Style
-Name:     Watermark
-Designer: Josh Peterson
-URL:      www.noaesthetic.com
+Name:     Dithered Simple
+Designer: Yonghwan SO
+URL:      
+based on Watermark by Josh Peterson.
 ----------------------------------------------- */
 
 /* Variable definitions
    ====================
 
-   <Variable name="keycolor" description="Main Color" type="color" default="#eeeeee" value="#eeeeee"/>
+   <Variable name="keycolor" description="Main Color" type="color" default="#eee" value="#eee"/>
 
    <Group description="Page Text" selector=".main-inner">
      <Variable name="body.font" description="Font" type="font"
          default="normal normal 10pt  Malgun Gothic" value="normal normal 10pt Malgun Gothic"/>
-     <Variable name="body.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#333" value="#333"/>
    </Group>
 
    <Group description="Backgrounds" selector=".main-inner">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#eeeeee" value="#eeeeee"/>
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#ddd" value="#ddd"/>
      <Variable name="footer.background.color" description="Footer Background" type="color" default="transparent" value="transparent"/>
    </Group>
 
@@ -158,8 +159,8 @@ a:visited {
 }
 
 a:hover {
-  text-decoration:underline;
   color: $(link.hover.color);
+  text-shadow: 0 1px 1px;
 }
 
 .body-fauxcolumns .cap-top {
@@ -255,7 +256,7 @@ blockquote {
 
 .tabs-inner .widget li a {
   display: inline-block;
-  padding: 0 2em 0 0;
+  padding: 0 1.5em 0 0;
   font: $(tabs.font);
   color: $(tabs.text.color);
   border-$endSide: 1px solid $(tabs.separator.color);
@@ -280,6 +281,7 @@ h2 {
 
 h2.date-header {
   font: $(date.font);
+  font-size: 1em;
   color: $(date.text.color);
 }
 
@@ -404,13 +406,13 @@ h3.post-title {
   list-style: none;
 }
 
-.widget ul li, .widget #ArchiveList ul.flat li {
+.LinkList ul li, .widget #ArchiveList ul.flat li {
   padding: .35em 0;
   text-indent: 0;
   border-top: dashed 1px $(widget.alternate.text.color);
 }
 
-.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+.LinkList ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
   border-top: none;
 }
 
