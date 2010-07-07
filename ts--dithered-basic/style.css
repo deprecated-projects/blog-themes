@@ -173,5 +173,9 @@ input.submit { border: 1px solid #666; background: #eee; }
 #footer #nav-foot ul { display: none; padding: 0; list-style: none inside; }
 
 
+/* special, style for social widgets */
+ul.delicious-cloud { line-height: 1.2em; }
+
+
 
 /* vim:set ts=2 sw=2: */
