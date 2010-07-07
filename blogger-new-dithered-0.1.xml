@@ -23,16 +23,16 @@ based on Watermark by Josh Peterson.
 /* Variable definitions
    ====================
 
-   <Variable name="keycolor" description="Main Color" type="color" default="#eee" value="#eee"/>
+   <Variable name="keycolor" description="Main Color" type="color" default="#eee" value="#eeeeee"/>
 
    <Group description="Page Text" selector=".main-inner">
      <Variable name="body.font" description="Font" type="font"
          default="normal normal 10pt  Malgun Gothic" value="normal normal 10pt Malgun Gothic"/>
-     <Variable name="body.text.color" description="Text Color" type="color" default="#333" value="#333"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#333" value="#333333"/>
    </Group>
 
    <Group description="Backgrounds" selector=".main-inner">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#ddd" value="#ddd"/>
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#ddd" value="#dddddd"/>
      <Variable name="footer.background.color" description="Footer Background" type="color" default="transparent" value="transparent"/>
    </Group>
 
@@ -1197,6 +1197,14 @@ h3.post-title {
   </div>
 </b:includable>
 </b:widget>
+<b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+<b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
 </b:section>
         </div>
         </div>
@@ -1426,20 +1434,6 @@ h3.post-title {
     <b:include name='quickedit'/>
   </b:includable>
 </b:widget>
-<b:widget id='LinkList1' locked='false' title='Links' type='LinkList'>
-<b:includable id='main'>
-
-<b:if cond='data:title'><h2><data:title/></h2></b:if>
- <div class='widget-content'>
-   <ul>
-     <b:loop values='data:links' var='link'>
-       <li><a expr:href='data:link.target'><data:link.name/></a></li>
-     </b:loop>
-   </ul>
-   <b:include name='quickedit'/>
- </div>
-</b:includable>
-</b:widget>
 <b:widget id='Text1' locked='false' title='sio4의 블로그' type='Text'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -1531,7 +1525,21 @@ h3.post-title {
   </div>
 </b:includable>
 </b:widget>
-<b:widget id='Label1' locked='false' title='레이블' type='Label'>
+<b:widget id='LinkList1' locked='false' title='Links' type='LinkList'>
+<b:includable id='main'>
+
+<b:if cond='data:title'><h2><data:title/></h2></b:if>
+ <div class='widget-content'>
+   <ul>
+     <b:loop values='data:links' var='link'>
+       <li><a expr:href='data:link.target'><data:link.name/></a></li>
+     </b:loop>
+   </ul>
+   <b:include name='quickedit'/>
+ </div>
+</b:includable>
+</b:widget>
+<b:widget id='Label1' locked='false' title='Tags' type='Label'>
 <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -1570,7 +1578,7 @@ h3.post-title {
   </div>
 </b:includable>
 </b:widget>
-<b:widget id='HTML2' locked='false' title='My Bookmarks' type='HTML'>
+<b:widget id='HTML2' locked='false' title='My Delicous Tags' type='HTML'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1581,14 +1589,6 @@ h3.post-title {
   </div>
 
   <b:include name='quickedit'/>
-</b:includable>
-</b:widget>
-<b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-<b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
 </b:includable>
 </b:widget>
 <b:widget id='BlogArchive1' locked='false' title='블로그 보관함' type='BlogArchive'>
@@ -1674,6 +1674,14 @@ h3.post-title {
   </ul>
 </b:includable>
 </b:widget>
+<b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+<b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
 <b:widget id='HTML1' locked='false' title='' type='HTML'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -1685,14 +1693,6 @@ h3.post-title {
   </div>
 
   <b:include name='quickedit'/>
-</b:includable>
-</b:widget>
-<b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-<b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
 </b:includable>
 </b:widget>
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'>
