@@ -36,6 +36,8 @@ p, blockquote { text-align: justify; }
 blockquote { background: #eef url(images/blockquote.png) no-repeat;
 	border: 1px dotted #999; padding: 5px 5px 5px 35px; overflow: auto; }
 blockquote p { margin: 0; }
+.imageblock p.cap1 { margin-top: 0; text-align: center; }
+
 pre {
 	background: #ddd;
 	border-top: 2px solid #999;
@@ -123,6 +125,8 @@ ul.nopad { padding: 0 0 0 24px; list-style: url(images/check.png) outside; }
 #sidebar #calendar .cal_current_week { background: #ccc; }
 #sidebar #calendar .cal_day4 {/*today*/ background: #eee; }
 
+#sidebar #rss-link { text-align: center; }
+
 
 #content {}
 #content div h2.page-title { margin-top: 0; }
@@ -146,8 +150,11 @@ input.submit { border: 1px solid #666; background: #eee; }
 #content .post {}
 #content .post .post-title h2 { margin-bottom: 0; }
 #content .post .post-title .post-info { text-align: right; }
+#content .post .admin {background: #ccc; border: 1px solid #999; }
 #content .type-protected p { text-align: center; }
 #content .post div.post-content { margin: 1em 0; }
+#content .post div.post-content p.moreless_fold { text-align: right; }
+#content ol.footnotes { border-top: 1px solid; font-size: 0.9em; color: #999; }
 #content .post div.post-tags { text-align: right; }
 #content .post .trackback ol li h4 { margin: 0; }
 #content .post-seperator { margin: 1em 0 2em;
