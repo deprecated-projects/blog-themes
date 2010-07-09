@@ -102,6 +102,19 @@
 				</div>
 				</s_sidebar_element>
 
+				<s_sidebar_element> <!-- 소셜 모듈 -->
+				<div class="sidebar-widget" id="socialbox">
+					<div id="social-twitter">
+						<script type="text/javascript">
+							tweetmeme_screen_name = 'scinix';
+							/* tweetmeme_style = 'compact'; */
+						</script>
+						<script type="text/javascript"
+							src="http://tweetmeme.com/i/scripts/follow.js"></script>
+					</div>
+				</div>
+				</s_sidebar_element>
+
 				<s_sidebar_element> <!-- 공지사항 모듈 -->
 				<s_rct_notice>
 				<div class="sidebar-widget" id="notice">
@@ -467,6 +480,17 @@
 					<div class="post-title">
 						<h2><a href="[##_article_rep_link_##]"
 								>[##_article_rep_title_##]</a></h2>
+						<div id="post-retweet">
+							<div id="share-tweetmeme">
+								<script type="text/javascript">
+									tweetmeme_source = 'scinix';
+									tweetmeme_url = 'http://[##_blogger_##].tistory.com'
+										+ '[##_article_rep_link_##]';
+								</script>
+								<script type="text/javascript"
+									src="http://tweetmeme.com/i/scripts/button.js"></script>
+							</div>
+						</div>
 						<div class="post-info">
 							<span class="category"><a href="[##_article_rep_category_link_##]"
 									>[##_article_rep_category_##]</a></span>

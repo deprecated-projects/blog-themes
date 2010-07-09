@@ -146,8 +146,10 @@ input.submit { border: 1px solid #666; background: #eee; }
 #content .search-list { border: 1px solid #999; padding: 5px; margin: 0 0 2em; }
 #content .search-list h3 { margin-top: 0; }
 
-#content .post {}
-#content .post .post-title h2 { margin-bottom: 0; }
+#content .post { margin-bottom: 2em; }
+#content .post .post-title #post-retweet {
+	display: inline-block; float: right; padding-left: 10px; }
+#content .post .post-title h2 { margin: 0; }
 #content .post .post-title .post-info { text-align: right; }
 #content .post .admin {background: #ccc; border: 1px solid #999; }
 #content .post #post-share { text-align: right; }
