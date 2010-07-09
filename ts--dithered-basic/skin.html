@@ -139,7 +139,7 @@
 				<div class="sidebar-widget" id="delicious-tag">
 					<h3>Delicious Tags</h3>
 					<script type="text/javascript"
-					  src="http://feeds.delicious.com/v2/js/tags/sio4?title=&count=70&sort=freq&flow=cloud&color=88bbff-006699&size=8-20"></script>
+					  src="http://feeds.delicious.com/v2/js/tags/[##_blogger_##]?title=&count=70&sort=freq&flow=cloud&color=88bbff-006699&size=8-20"></script>
 				</div>
 				</s_sidebar_element>
 
@@ -508,14 +508,19 @@
 						src="./images/handy-email_16.png"></a>
 						</div>
 						<script type="text/javascript">
-							var addthis_config = { "data_track_clickback":true };
+							var addthis_config = {
+								"data_track_clickback": true,
+								"data_track_linkback": false
+							};
 							var addthis_share = {
-								"url":"[##_article_rep_link_##]",
+								/* huruku! _blog_link_ is not working. why? */
+								"url":"http://[##_blogger_##].tistory.com"
+									+ "[##_article_rep_link_##]",
 								"title":"[##_article_rep_title_##]"
 							};
 						</script>
 						<script type="text/javascript"
-						src="http://s7.addthis.com/js/250/addthis_widget.js#username=sio4"></script>
+						src="http://s7.addthis.com/js/250/addthis_widget.js#username=[##_blogger_##]"></script>
 						<!-- end-of-addthis -->
 					</div>
 
@@ -687,7 +692,7 @@
 		<div id="footer">
 			<div id="copyright">
 				powered by tistory,<br/>
-				with "Simple Dithered" theme by sio4.
+				with "Simple Dithered" theme by [##_blogger_##].
 			</div>
 			<div id="signature">
 				-- <br />
