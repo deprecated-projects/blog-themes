@@ -108,6 +108,7 @@ div.imageblock { clear: none !important; }
 	border-bottom: 2px solid #ccc; line-height: 1.2em; margin-bottom: 0.5em;
 }
 ul.nopad { padding: 0 0 0 24px; list-style: url(images/check.png) outside; }
+ul.nopad { margin: 1em 0; }
 #sidebar #tagbox ul { text-align: justify; padding: 0; line-height: 1.2em; }
 #sidebar #tagbox ul li { display: inline; margin: 0.2em; }
 #sidebar #tagbox a.cloud1 { font-size: 1.8em; }
