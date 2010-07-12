@@ -152,7 +152,11 @@ input.submit { border: 1px solid #666; background: #eee; }
 #content .post .post-title h2 { margin: 0; }
 #content .post .post-title .post-info { text-align: right; }
 #content .post .admin {background: #ccc; border: 1px solid #999; }
-#content .post #post-share { text-align: right; }
+#content .post #post-share {
+	text-align: right; padding: 5px 0; border-bottom: 1px dotted #999; }
+#content .post #post-share .share-title { display: none; }
+#content .post #post-share div { display:inline-block; vertical-align:bottom; }
+#content .post #post-share #share-facebook { padding-top: 40px; float: left; }
 #content .type-protected p { text-align: center; }
 #content .post div.post-content { margin: 1em 0; text-align: justify; }
 #content .post div.post-content p.moreless_fold { text-align: right; }
