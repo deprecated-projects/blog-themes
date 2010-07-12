@@ -2,9 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- XXX google webmaster-tool here! -->
 	<link rel="alternate" type="application/rss+xml"
 		title="[##_title_##]" href="[##_rss_url_##]" />
 	<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="./images/ie.css" />
+	<![endif]-->
 	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
 	<title>[##_page_title_##] : [##_title_##]</title>
 
@@ -15,6 +19,7 @@
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushDiff.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js"></script>
@@ -501,11 +506,12 @@
 
 					<div id="post-share">
 						<span class="share-title">이 글이 맘에 드시나요? </span>
-						<div id="share-facebook">
+						<div id="share-fb">
 							<iframe src="http://www.facebook.com/plugins/like.php?href=http://[##_blogger_##].tistory.com[##_article_rep_link_##]&amp;layout=standard&amp;show_faces=false&amp;width=320&amp;action=like&amp;colorscheme=light&amp;height=25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:25px;" allowTransparency="true"></iframe>
 						</div>
 						<!-- addthis -->
-						<div class="addthis_toolbox addthis_default_style addthis_custom_images">
+						<div id="share-at"
+						class="addthis_toolbox addthis_default_style addthis_custom_images">
 						<a class="addthis_button_facebook"><img
 						src="./images/handy-facebook_16.png"></a>
 						<a class="addthis_button_twitter"><img
@@ -538,7 +544,7 @@
 						<script type="text/javascript"
 						src="http://s7.addthis.com/js/250/addthis_widget.js#username=[##_blogger_##]"></script>
 						<!-- end-of-addthis -->
-						<div id="share-tweetmeme">
+						<div id="share-tm">
 							<script type="text/javascript">
 								tweetmeme_source = 'scinix';
 								tweetmeme_url = 'http://[##_blogger_##].tistory.com'
@@ -738,6 +744,8 @@
 		</div><!-- close footer -->
 	</div><!-- close container -->
 	</s_t3>
+	<!--script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script-->
+	<!-- XXX Google Analytics here! -->
 </body>
 </html>
 
