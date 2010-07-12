@@ -111,11 +111,11 @@ ul { margin: 1em 0; }
 ul.nopad { padding: 0 0 0 24px; list-style: url(images/check.png) outside; }
 #sidebar #tagbox ul { text-align: justify; padding: 0; line-height: 1.2em; }
 #sidebar #tagbox ul li { display: inline; margin: 0.2em; }
-#sidebar #tagbox a.cloud1 { font-size: 1.8em; }
-#sidebar #tagbox a.cloud2 { font-size: 1.5em; }
-#sidebar #tagbox a.cloud3 { font-size: 1.2em; }
-#sidebar #tagbox a.cloud4 { font-size: 0.9em; }
-#sidebar #tagbox a.cloud5 { font-size: 0.6em; }
+a.cloud1 { font-size: 1.8em; font-weight: bold; }
+a.cloud2 { font-size: 1.5em; font-weight: bold; }
+a.cloud3 { font-size: 1.2em; font-weight: bold; }
+a.cloud4 { font-size: 0.9em; }
+a.cloud5 { font-size: 0.6em; }
 
 #sidebar .author-info .date { display: none; }
 
@@ -130,7 +130,7 @@ ul.nopad { padding: 0 0 0 24px; list-style: url(images/check.png) outside; }
 
 #content {}
 #content div h2.page-title { margin-top: 0; }
-#content #taglog ul { list-style: none; padding: 0; }
+#content #taglog ul { list-style: none; padding: 0; font-size: 1.2em; }
 #content #taglog ul li { display: inline; }
 
 input, textarea { font-family: Malgun Gothic; }
