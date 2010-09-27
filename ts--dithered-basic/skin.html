@@ -544,6 +544,14 @@
 						<script type="text/javascript"
 						src="http://s7.addthis.com/js/250/addthis_widget.js#username=[##_blogger_##]"></script>
 						<!-- end-of-addthis -->
+
+						<!-- evernote -->
+						<div id="share-en">
+						<script type="text/javascript" src="http://static.evernote.com/noteit.js"></script>
+						<a href="#" onclick="Evernote.doClip({contentId:'content-[##_article_rep_link_##]',providerName:'Yonghwan\'s Blog',suggestNotebook:'Yonghwan\'s Blog'}); return false;"><img src="http://static.evernote.com/article-clipper.png" alt="Clip to Evernote" /></a>
+						</div>
+
+						<!-- tweetmeme -->
 						<div id="share-tm">
 							<script type="text/javascript">
 								tweetmeme_source = 'scinix';
@@ -555,7 +563,7 @@
 						</div>
 					</div>
 
-					<div class="post-content">
+					<div class="post-content" id="content-[##_article_rep_link_##]">
 						[##_article_rep_desc_##]
 					</div>
 

@@ -1,0 +1,31 @@
+diff -uNr ts--dithered-basic/skin.html ts--dithered-basic-down/skin.html
+--- ts--dithered-basic/skin.html	2010-07-12 22:02:15.000000000 +0900
++++ ts--dithered-basic-down/skin.html	2092-08-05 00:00:00.000000000 +0900
+@@ -2,7 +2,7 @@
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+-	<!-- XXX google webmaster-tool here! -->
++	<meta name="google-site-verification" content="1QQkApbCL-TQ7jHgl1PrvEK4wnijlMSM6s6BFYisJQI" />
+ 	<link rel="alternate" type="application/rss+xml"
+ 		title="[##_title_##]" href="[##_rss_url_##]" />
+ 	<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+@@ -745,7 +745,17 @@
+ 	</div><!-- close container -->
+ 	</s_t3>
+ 	<!--script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script-->
+-	<!-- XXX Google Analytics here! -->
++<script type="text/javascript">
++var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
++document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
++</script>
++<script type="text/javascript">
++try {
++var pageTracker = _gat._getTracker("UA-9304808-6");
++pageTracker._trackPageview();
++} catch(err) {}
++</script>
++
+ </body>
+ </html>
+ 
