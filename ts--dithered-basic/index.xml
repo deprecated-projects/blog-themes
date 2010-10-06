@@ -2,11 +2,12 @@
 <skin version="1.0" language="ko">
 	<information>
 		<name>Dithered Basic</name>
-		<version>0.9.1</version>
+		<version>0.9.2</version>
 		<description>
 			<![CDATA[
 			푸르스름, 회색 블로그 테마.
 			* 0.9.1: evernote 지원 추가, 2010-09-27
+			* 0.9.2: addthis 오류 수정, 2010-10-06
 			]]>
 		</description>
 		<license>

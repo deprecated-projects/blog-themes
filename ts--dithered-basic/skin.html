@@ -507,27 +507,56 @@
 					<div id="post-share">
 						<span class="share-title">이 글이 맘에 드시나요? </span>
 						<div id="share-fb">
-							<iframe src="http://www.facebook.com/plugins/like.php?href=http://[##_blogger_##].tistory.com[##_article_rep_link_##]&amp;layout=standard&amp;show_faces=false&amp;width=320&amp;action=like&amp;colorscheme=light&amp;height=25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:25px;" allowTransparency="true"></iframe>
+							<iframe src="http://www.facebook.com/plugins/like.php?href=http://[##_blogger_##].tistory.com[##_article_rep_link_##]&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:25px;" allowTransparency="true"></iframe>
 						</div>
 						<!-- addthis -->
 						<div id="share-at"
 						class="addthis_toolbox addthis_default_style addthis_custom_images">
-						<a class="addthis_button_facebook"><img
-						src="./images/handy-facebook_16.png"></a>
-						<a class="addthis_button_twitter"><img
-						src="./images/handy-twitter_16.png"></a>
-						<a class="addthis_button_delicious"><img
-						src="./images/handy-delicious_16.png"></a>
-						<a class="addthis_button_digg"><img
-						src="./images/handy-digg_16.png"></a>
-						<a class="addthis_button_google"><img
-						src="./images/handy-google_16.png"></a>
-						<a class="addthis_button_linkedin"><img
-						src="./images/handy-linkedin_16.png"></a>
-						<a class="addthis_button_favorites"><img
-						src="./images/handy-heart_16.png"></a>
-						<a class="addthis_button_email"><img
-						src="./images/handy-email_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_facebook"><img
+							src="./images/handy-facebook_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_twitter"><img
+							src="./images/handy-twitter_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_delicious"><img
+							src="./images/handy-delicious_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_digg"><img
+							src="./images/handy-digg_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_googlebuzz"><img
+							src="./images/handy-google_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_googlebuzz"><img
+							src="./images/handy-buzz_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_linkedin"><img
+							src="./images/handy-linkedin_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_favorites"><img
+							src="./images/handy-heart_16.png"></a>
+						<a
+							addthis:url="http://[##_blogger_##].tistory.com[##_article_rep_link_##]"
+							addthis:title="[##_article_rep_title_##]"
+							class="addthis_button_email"><img
+							src="./images/handy-email_16.png"></a>
 						</div>
 						<script type="text/javascript">
 							var addthis_config = {
@@ -536,9 +565,11 @@
 							};
 							var addthis_share = {
 								/* huruku! _blog_link_ is not working. why? */
+								/* use anchor attribute bacause js variables are overided.
 								"url":"http://[##_blogger_##].tistory.com"
 									+ "[##_article_rep_link_##]",
 								"title":"[##_article_rep_title_##]"
+								*/
 							};
 						</script>
 						<script type="text/javascript"
